@@ -1,0 +1,506 @@
+{
+  "1": {
+    "inputs": {
+      "value": "a - 1",
+      "a": [
+        "54",
+        0
+      ]
+    },
+    "class_type": "SimpleMath+",
+    "_meta": {
+      "title": "-1还原整除结果来布尔"
+    }
+  },
+  "2": {
+    "inputs": {
+      "a": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "CM_IntToBool",
+    "_meta": {
+      "title": "IntToBool"
+    }
+  },
+  "4": {
+    "inputs": {
+      "boolean": [
+        "45",
+        0
+      ],
+      "on_true": [
+        "52",
+        2
+      ],
+      "on_false": [
+        "46",
+        2
+      ]
+    },
+    "class_type": "easy ifElse",
+    "_meta": {
+      "title": "If else"
+    }
+  },
+  "13": {
+    "inputs": {
+      "boolean": [
+        "2",
+        0
+      ],
+      "on_true": [
+        "52",
+        2
+      ],
+      "on_false": [
+        "46",
+        2
+      ]
+    },
+    "class_type": "easy ifElse",
+    "_meta": {
+      "title": "If else"
+    }
+  },
+  "15": {
+    "inputs": {
+      "multiply_by": [
+        "27",
+        1
+      ],
+      "add_by": 0,
+      "numberA": [
+        "13",
+        0
+      ]
+    },
+    "class_type": "MultiplicationNode",
+    "_meta": {
+      "title": "计算扩大裁剪的内容（乘比例）"
+    }
+  },
+  "16": {
+    "inputs": {
+      "multiply_by": [
+        "27",
+        1
+      ],
+      "add_by": 0,
+      "numberA": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "MultiplicationNode",
+    "_meta": {
+      "title": "计算扩大裁剪的内容（乘比例）"
+    }
+  },
+  "18": {
+    "inputs": {
+      "text": "8,1280,1728,3",
+      "tensor": [
+        "33",
+        0
+      ]
+    },
+    "class_type": "easy showTensorShape",
+    "_meta": {
+      "title": "Show Tensor Shape"
+    }
+  },
+  "20": {
+    "inputs": {
+      "image": [
+        "43",
+        0
+      ]
+    },
+    "class_type": "easy imageSize",
+    "_meta": {
+      "title": "ImageSize"
+    }
+  },
+  "23": {
+    "inputs": {
+      "side": "Shortest",
+      "image": [
+        "35",
+        0
+      ]
+    },
+    "class_type": "easy imageSizeBySide",
+    "_meta": {
+      "title": "ImageSize (Side)"
+    }
+  },
+  "25": {
+    "inputs": {
+      "images": [
+        "33",
+        0
+      ]
+    },
+    "class_type": "ImageListToImageBatch",
+    "_meta": {
+      "title": "Image List to Image Batch"
+    }
+  },
+  "27": {
+    "inputs": {
+      "number_type": "integer",
+      "number": 2
+    },
+    "class_type": "Constant Number",
+    "_meta": {
+      "title": "放大比例"
+    }
+  },
+  "29": {
+    "inputs": {
+      "overlap_x": [
+        "16",
+        1
+      ],
+      "overlap_y": [
+        "15",
+        1
+      ],
+      "rows": [
+        "51",
+        0
+      ],
+      "cols": [
+        "50",
+        0
+      ],
+      "tiles": [
+        "25",
+        0
+      ]
+    },
+    "class_type": "ImageUntile+",
+    "_meta": {
+      "title": "🔧 Image Untile"
+    }
+  },
+  "32": {
+    "inputs": {
+      "per_batch": 2,
+      "upscale_model": [
+        "38",
+        0
+      ],
+      "images": [
+        "42",
+        0
+      ]
+    },
+    "class_type": "ImageUpscaleWithModelBatched",
+    "_meta": {
+      "title": "Image Upscale With Model Batched"
+    }
+  },
+  "33": {
+    "inputs": {
+      "upscale_method": "nearest-exact",
+      "scale_by": 0.5,
+      "image": [
+        "32",
+        0
+      ]
+    },
+    "class_type": "ImageScaleBy",
+    "_meta": {
+      "title": "缩放图像（比例）"
+    }
+  },
+  "34": {
+    "inputs": {
+      "images": [
+        "33",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "35": {
+    "inputs": {
+      "image": "2025-11-26_00001_.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "加载图像"
+    }
+  },
+  "36": {
+    "inputs": {
+      "images": [
+        "29",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "38": {
+    "inputs": {
+      "model_name": "RealESRGAN_x4plus_anime_6B.pth"
+    },
+    "class_type": "UpscaleModelLoader",
+    "_meta": {
+      "title": "加载放大模型"
+    }
+  },
+  "41": {
+    "inputs": {
+      "images": [
+        "42",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "tile"
+    }
+  },
+  "42": {
+    "inputs": {
+      "rows": [
+        "51",
+        0
+      ],
+      "cols": [
+        "50",
+        0
+      ],
+      "overlap": 0,
+      "overlap_x": [
+        "4",
+        0
+      ],
+      "overlap_y": [
+        "13",
+        0
+      ],
+      "image": [
+        "43",
+        0
+      ]
+    },
+    "class_type": "ImageTile+",
+    "_meta": {
+      "title": "🔧 Image Tile"
+    }
+  },
+  "43": {
+    "inputs": {
+      "aspect_ratio": "original",
+      "proportional_width": 1,
+      "proportional_height": 1,
+      "fit": "letterbox",
+      "method": "lanczos",
+      "round_to_multiple": "32",
+      "scale_to_side": "shortest",
+      "scale_to_length": [
+        "23",
+        0
+      ],
+      "background_color": "#000000",
+      "image": [
+        "35",
+        0
+      ]
+    },
+    "class_type": "LayerUtility: ImageScaleByAspectRatio V2",
+    "_meta": {
+      "title": "LayerUtility: ImageScaleByAspectRatio V2"
+    }
+  },
+  "44": {
+    "inputs": {
+      "number_type": "integer",
+      "number": 1024
+    },
+    "class_type": "Constant Number",
+    "_meta": {
+      "title": "计算分割行列数套用的分辨率框"
+    }
+  },
+  "45": {
+    "inputs": {
+      "a": [
+        "47",
+        0
+      ]
+    },
+    "class_type": "CM_IntToBool",
+    "_meta": {
+      "title": "IntToBool"
+    }
+  },
+  "46": {
+    "inputs": {
+      "number_type": "integer",
+      "number": 0
+    },
+    "class_type": "Constant Number",
+    "_meta": {
+      "title": "行或列为1时不扩大裁剪"
+    }
+  },
+  "47": {
+    "inputs": {
+      "value": "a - 1",
+      "a": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "SimpleMath+",
+    "_meta": {
+      "title": "-1还原整除结果来布尔"
+    }
+  },
+  "49": {
+    "inputs": {
+      "output": "",
+      "input": [
+        "51",
+        0
+      ]
+    },
+    "class_type": "Display Int (rgthree)",
+    "_meta": {
+      "title": "Display Int (rgthree)"
+    }
+  },
+  "50": {
+    "inputs": {
+      "expression": "a + (a % 2)",
+      "speak_and_recognation": {
+        "__value__": [
+          false,
+          true
+        ]
+      },
+      "a": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "MathExpression|pysssss",
+    "_meta": {
+      "title": "如果是奇数就+1"
+    }
+  },
+  "51": {
+    "inputs": {
+      "expression": "a + (a % 2)",
+      "speak_and_recognation": {
+        "__value__": [
+          false,
+          true
+        ]
+      },
+      "a": [
+        "54",
+        0
+      ]
+    },
+    "class_type": "MathExpression|pysssss",
+    "_meta": {
+      "title": "如果是奇数就+1"
+    }
+  },
+  "52": {
+    "inputs": {
+      "number_type": "integer",
+      "number": 32
+    },
+    "class_type": "Constant Number",
+    "_meta": {
+      "title": "扩大裁剪的数量"
+    }
+  },
+  "53": {
+    "inputs": {
+      "value": "a // b + 1",
+      "a": [
+        "20",
+        0
+      ],
+      "b": [
+        "44",
+        2
+      ]
+    },
+    "class_type": "SimpleMath+",
+    "_meta": {
+      "title": "整除+1计算分割行列数"
+    }
+  },
+  "54": {
+    "inputs": {
+      "value": "a // b + 1",
+      "a": [
+        "20",
+        1
+      ],
+      "b": [
+        "44",
+        2
+      ]
+    },
+    "class_type": "SimpleMath+",
+    "_meta": {
+      "title": "整除+1计算分割行列数"
+    }
+  },
+  "55": {
+    "inputs": {
+      "output": "",
+      "input": [
+        "50",
+        0
+      ]
+    },
+    "class_type": "Display Int (rgthree)",
+    "_meta": {
+      "title": "Display Int (rgthree)"
+    }
+  },
+  "56": {
+    "inputs": {
+      "text": "8,640,864,3",
+      "tensor": [
+        "42",
+        0
+      ]
+    },
+    "class_type": "easy showTensorShape",
+    "_meta": {
+      "title": "Show Tensor Shape"
+    }
+  },
+  "60": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "29",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存图像"
+    }
+  }
+}
