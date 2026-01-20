@@ -7,9 +7,9 @@ echo ==========================================
 
 
 echo [1/2] 正在启动后端服务 (后台运行)...
-REM 使用 start /b 在当前窗口后台启动，并将日志输出到 backend.log
+REM 使用 start /min 最小化启动，确保服务拥有独立窗口进程，避免启动失败
 cd backend
-start /b "" cmd /c "start.bat >..\backend.log 2>&1"
+start "Backend" /min cmd /c "call start.bat >..\backend.log 2>&1"
 cd ..
 
 
