@@ -1,6 +1,7 @@
 # HP-infinity-canvas
 
 ## **需要先安装node.js。https://nodejs.org/en**
+## **需要先安装python3.10以上版本**
 ## **快捷安装启动：双击start_all.bat，会自动安装并启动然后开启网页。使用start_all.bat就不需要在前端及后端文件夹中单独安装启动。**
 ## **如果start_all.bat开起来后创建项目失败，说明后端没有启动，请进入backend文件夹双击start.bat启动后端。**
 ---
