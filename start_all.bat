@@ -6,6 +6,28 @@ echo      AI Canvas Editor - 全栈启动脚本
 echo ==========================================
 
 
+REM === 自动检测并安装 Node.js ===
+node -v >nul 2>&1
+if %errorlevel% neq 0 (
+    echo [警告] 未检测到 Node.js 环境，前端无法启动。
+    echo [信息] 正在尝试自动下载并安装 Node.js (LTS)...
+    
+    set "NODE_URL=https://nodejs.org/dist/v20.11.0/node-v20.11.0-x64.msi"
+    set "NODE_MSI=node_install.msi"
+    
+    echo [下载] 正在下载 Node.js 安装包...
+    powershell -Command "Invoke-WebRequest -Uri '%NODE_URL%' -OutFile '%NODE_MSI%'"
+    
+    echo [安装] 正在启动安装程序，请按提示完成安装...
+    start /wait msiexec /i %NODE_MSI%
+    
+    del %NODE_MSI%
+    echo.
+    echo [提示] Node.js 安装完成。请 **关闭此窗口** 并重新运行脚本以加载环境变量。
+    pause
+    exit
+)
+
 echo [1/2] 正在启动后端服务 (后台运行)...
 REM 使用 start /min 最小化启动，确保服务拥有独立窗口进程，避免启动失败
 cd backend
