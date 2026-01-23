@@ -1,9 +1,10 @@
 # HP-infinity-canvas
-
+# version1.2-20260123 增加与ps的交互和与adobe bridge的交互，需要另外安装相应软件的插件和脚本，也修复了启动器
 ## **需要先安装node.js。https://nodejs.org/en**
 ## **需要先安装python3.10以上版本**
-## **快捷安装启动：双击start_all.bat，会自动安装并启动然后开启网页。使用start_all.bat就不需要在前端及后端文件夹中单独安装启动。**
-## **如果start_all.bat开起来后创建项目失败，说明后端没有启动，请进入backend文件夹双击start.bat启动后端。**
+## **安装：在frontend双击start.bat安装并启动前端，在backend双击start.bat安装并启动后端，第二次启动才建议使用主目录的start_all.bat。**
+## **快捷启动：双击start_all.bat，会自动启动前端和后端然后开启网页。**
+
 ---
 
 ## **帮助：网页内右上角的问号，有大概的使用方法。**

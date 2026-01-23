@@ -1,0 +1,10 @@
+==========================================
+     AI Canvas Editor - 后端启动脚本
+==========================================
+[信息] 正在启动后端服务...
+[提示] 如果是首次运行，uv 会自动配置虚拟环境并安装依赖，请耐心等待。
+
+error: failed to remove file `G:\00编程内容\HP无限画布\code6\backend\.venv\Lib\site-packages\websockets/speedups.cp310-win_amd64.pyd`: 拒绝访问。 (os error 5)
+
+[错误] 服务启动失败，请检查报错信息。
+Press any key to continue . . . 
